@@ -39,7 +39,7 @@ Analiza el nivel de interacción que generan las publicaciones.
 - Los **carruseles generan mayor interacción** que imágenes o vídeos.
 - El engagement presenta **variaciones a lo largo del tiempo**, con picos en determinados periodos.
 
-## 📊 Vista previa del dashboard
+### 📊 Vista previa del dashboard
 
 ![Engagement](reports/figures/engagement.png)
 
@@ -62,6 +62,9 @@ Describe el perfil demográfico y geográfico de los seguidores.
 - El grupo de edad predominante es **35–44 años**.
 - La audiencia se concentra principalmente en **España**, con un peso destacado de **Madrid (53,2 %)**.
 
+### 📊 Vista previa del dashboard
+
+![Audiencia](reports/figures/audience.png)
 ---
 
 ## 3️⃣ Dashboard de Comportamiento
@@ -81,6 +84,10 @@ Analiza cómo interactúan los usuarios con el perfil.
 - El perfil registra **2213 visitas al perfil y 214 cuentas que interactúan**.
 - Se generan **543 clics al sitio web**, lo que indica capacidad de conversión.
 - La mayoría de las interacciones corresponden a **likes**, mientras que comentarios y compartidos presentan menor volumen.
+
+### 📊 Vista previa del dashboard
+
+![Comportamiento](reports/figures/comportamiento.png)
 
 ---
 
