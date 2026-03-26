@@ -1,4 +1,4 @@
-!(logo/favicon_eg_black.png)
+![logo](logo/favicon_eg_black.png)
 
 # Instagram Audience Analytics
 # 📊 Análisis del rendimiento del perfil de IG de enGira! 
