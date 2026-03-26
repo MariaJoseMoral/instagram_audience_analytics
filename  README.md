@@ -1,5 +1,7 @@
-# Instagrama Audience Analytics
-# 📊 Análisis del rendimiento de una cuenta de Instagram  
+!(logo/favicon_eg_black.png)
+
+# Instagram Audience Analytics
+# 📊 Análisis del rendimiento del perfil de IG de enGira! 
 ### Audiencia, engagement y comportamiento mediante dashboards interactivos
 
 ## 📌 Descripción del proyecto
