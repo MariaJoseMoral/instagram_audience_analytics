@@ -1,4 +1,4 @@
-![logo](logo/favicon_eg_black.png)
+<img src="logo/favicon_eg_black.png" alt="Logo enGira!" width="120">
 
 # Instagram Audience Analytics
 # 📊 Análisis del rendimiento del perfil de IG de enGira! 
@@ -17,8 +17,65 @@ A partir de datos extraídos mediante la **Instagram Graph API**, se estudian tr
 El objetivo del análisis es comprender **cómo interactúan los usuarios con el perfil y qué factores influyen en el rendimiento del contenido**, con el fin de identificar oportunidades de mejora en la estrategia de comunicación digital.
 
 ---
+## 🛠️ Tecnologías utilizadas
 
-# 🗂️ Estructura del proyecto
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Tableau**
+- **Jupyter Notebook**
+- **Instagram Graph API**
+- **Git / GitHub**
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+INSTAGRAM_AUDIENCE_ANALYTICS/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/
+│   │   ├── demographics_IG.csv
+│   │   ├── geographics_IG.csv
+│   │   ├── media_insights.csv
+│   │   ├── total_metrics_by_window.csv
+│   │   └── total_metrics.csv
+│   │
+│   └── processed/
+│       ├── ig_follower_demographics_age.csv
+│       ├── ig_follower_demographics_city.csv
+│       ├── ig_follower_demographics_country.csv
+│       ├── ig_follower_demographics_gender.csv
+│       ├── ig_totals_by_window_long.csv
+│       └── ig_totals_since_creation.csv
+│
+├── notebooks/
+│   ├── extraccion_datos_api.ipynb
+│   ├── eda_ig.ipynb
+│   ├── eda_insights.ipynb
+│   ├── insights_media.ipynb
+│   ├── union_limpieza.ipynb
+│   └── union_limpieza copy.ipynb
+│
+├── reports/
+│   ├── dashboards/
+│   │   └── Análisis audiencia enGira!OK.twbx
+│   │
+│   └── figures/
+│       ├── audience.png
+│       ├── comportamiento.png
+│       └── engagement.png
+│
+└── logo/
+    └── favicon_eg_black.png
+```
+
+---
+
+# 🗂️ Dashboards
 
 El proyecto se organiza en **tres dashboards principales**, cada uno centrado en un aspecto del rendimiento del perfil.
 
@@ -41,9 +98,7 @@ Analiza el nivel de interacción que generan las publicaciones.
 - Los **carruseles generan mayor interacción** que imágenes o vídeos.
 - El engagement presenta **variaciones a lo largo del tiempo**, con picos en determinados periodos.
 
-### 📊 Vista previa del dashboard
-
-![Engagement](reports/figures/engagement.png)
+<img src="reports/figures/audience.png" alt="Dashboard audiencia" width="900">
 
 ---
 
@@ -66,7 +121,8 @@ Describe el perfil demográfico y geográfico de los seguidores.
 
 ### 📊 Vista previa del dashboard
 
-![Audiencia](reports/figures/audience.png)
+<img src="reports/figures/comportamiento.png" alt="Dashboard comportamiento" width="900">
+
 ---
 
 ## 3️⃣ Dashboard de Comportamiento
@@ -89,7 +145,7 @@ Analiza cómo interactúan los usuarios con el perfil.
 
 ### 📊 Vista previa del dashboard
 
-![Comportamiento](reports/figures/comportamiento.png)
+<img src="reports/figures/engagement.png" alt="Dashboard engagement" width="900">
 
 ---
 
@@ -156,5 +212,8 @@ Además, el perfil no solo genera interacción dentro de la plataforma, sino que
 - integración de datos de múltiples redes sociales
 
 # Autora
-Maria Jose Moral
-info@engira.art
+**María Moral**  
+Análisis de datos aplicado a la gestión cultural 
+
+[LinkedIn](www.linkedin.com/in/maria-moral-7862a24b) 
+
