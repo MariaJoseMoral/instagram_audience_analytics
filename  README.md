@@ -1,4 +1,4 @@
-# Tableau
+# Instagrama Audience Analytics
 # 📊 Análisis del rendimiento de una cuenta de Instagram  
 ### Audiencia, engagement y comportamiento mediante dashboards interactivos
 
@@ -38,6 +38,10 @@ Analiza el nivel de interacción que generan las publicaciones.
 - El perfil presenta un **engagement del 7,55 %**, indicando una audiencia activa.
 - Los **carruseles generan mayor interacción** que imágenes o vídeos.
 - El engagement presenta **variaciones a lo largo del tiempo**, con picos en determinados periodos.
+
+## 📊 Vista previa del dashboard
+
+![Engagement](reports/figures/engagement.png)
 
 ---
 
