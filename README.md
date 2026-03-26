@@ -1,7 +1,7 @@
 <img src="logo/favicon_eg_black.png" alt="Logo enGira!" width="120">
 
 # Instagram Audience Analytics
-# 📊 Análisis del rendimiento del perfil de IG de enGira! 
+# Análisis del rendimiento del perfil de IG de enGira! 
 ### Audiencia, engagement y comportamiento mediante dashboards interactivos
 
 ## 📌 Descripción del proyecto
