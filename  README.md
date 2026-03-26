@@ -98,7 +98,9 @@ Analiza el nivel de interacción que generan las publicaciones.
 - Los **carruseles generan mayor interacción** que imágenes o vídeos.
 - El engagement presenta **variaciones a lo largo del tiempo**, con picos en determinados periodos.
 
-<img src="reports/figures/audience.png" alt="Dashboard audiencia" width="900">
+### 📊 Vista previa del dashboard
+
+<img src="reports/figures/engagement.png" alt="Dashboard engagement" width="900">
 
 ---
 
@@ -121,7 +123,7 @@ Describe el perfil demográfico y geográfico de los seguidores.
 
 ### 📊 Vista previa del dashboard
 
-<img src="reports/figures/comportamiento.png" alt="Dashboard comportamiento" width="900">
+<img src="reports/figures/audience.png" alt="Dashboard audiencia" width="900">
 
 ---
 
@@ -145,7 +147,7 @@ Analiza cómo interactúan los usuarios con el perfil.
 
 ### 📊 Vista previa del dashboard
 
-<img src="reports/figures/engagement.png" alt="Dashboard engagement" width="900">
+<img src="reports/figures/comportamiento.png" alt="Dashboard comportamiento" width="900">
 
 ---
 
