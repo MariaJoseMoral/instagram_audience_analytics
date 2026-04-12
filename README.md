@@ -29,12 +29,81 @@ El objetivo del análisis es comprender **cómo interactúan los usuarios con el
 
 ---
 
+## ⚙️ Automatización del proceso
+
+Ahora el proyecto también incluye un pipeline ejecutable desde terminal para evitar rehacer manualmente los notebooks cada vez.
+
+### 1. Configura tus credenciales
+
+Crea un archivo `.env` en la raíz del proyecto con estas variables:
+
+```bash
+ACCESS_TOKEN=tu_token_de_instagram_graph_api
+IG_USER_ID=tu_instagram_user_id
+IG_CREATION_DATE=2024-06-25
+IG_API_VERSION=v21.0
+```
+
+Puedes partir de `.env.example` y crear tu `.env` real a partir de ahí. Ese archivo `.env` está ignorado por git y no se sube al repositorio.
+
+`IG_CREATION_DATE` e `IG_API_VERSION` son opcionales. Si no los defines, el script usa `2024-06-25` y `v21.0`.
+
+### 2. Instala dependencias
+
+```bash
+make install
+```
+
+### 3. Ejecuta el pipeline
+
+```bash
+make pipeline
+```
+
+Eso hace en un solo paso:
+
+- extraer métricas globales desde la API
+- extraer demographic breakdowns (`age`, `gender`, `country`, `city`)
+- extraer insights de publicaciones
+- regenerar los CSV preparados para Tableau
+
+Si quieres regenerar rápido los CSV sin pedir `media_insights`, usa:
+
+```bash
+make pipeline-fast
+```
+
+También puedes lanzar cada fase por separado:
+
+```bash
+make extract
+make transform
+```
+
+### Archivos que genera
+
+- `data/processed/ig_totals_since_creation.csv`
+- `data/processed/ig_totals_by_window_long.csv`
+- `data/processed/ig_follower_demographics_age.csv`
+- `data/processed/ig_follower_demographics_gender.csv`
+- `data/processed/ig_follower_demographics_country.csv`
+- `data/processed/ig_follower_demographics_city.csv`
+- `data/raw/media_insights.csv`
+- `data/raw/total_metrics.csv`
+- `data/raw/total_metrics_by_window.csv`
+- `data/raw/demographics_IG.csv`
+- `data/raw/geographics_IG.csv`
+
+---
+
 ## 📁 Estructura del proyecto
 
 ```bash
 INSTAGRAM_AUDIENCE_ANALYTICS/
 │
 ├── README.md
+├── Makefile
+├── requirements.txt
 │
 ├── data/
 │   ├── raw/
@@ -59,6 +128,9 @@ INSTAGRAM_AUDIENCE_ANALYTICS/
 │   ├── insights_media.ipynb
 │   ├── union_limpieza.ipynb
 │   └── union_limpieza copy.ipynb
+│
+├── scripts/
+│   └── instagram_pipeline.py
 │
 ├── reports/
 │   ├── dashboards/
